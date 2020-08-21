@@ -1,0 +1,154 @@
+:root {
+  --white: #fff;
+  --active: #2196f3;
+  --black-text: #212121;
+  --gray-text: #757575;
+  --gray-2: rgba(255, 255, 255, 0.6);
+  --background: #2f303a;
+  --background-2: #f5f4fa;
+}
+body {
+  font-family: 'Roboto';
+}
+.logo-header {
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+}
+.logo-footer {
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+}
+.logo-footer > span {
+  color: var(--active);
+}
+.logo-header > span {
+  color: var(--active);
+}
+/* меню навігації в хедері */
+nav > ul > li > a {
+  color: var(--black-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+nav > ul > li > a:hover {
+  color: var(--active);
+}
+nav > ul > li > a:focus {
+  color: var(--active);
+}
+address {
+  color: var(--white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+/* тел і емеіл в футері */
+address > a {
+  color: var(--gray-2);
+}
+address > a:hover {
+  color: var(--active);
+}
+address > a:focus {
+  color: var(--active);
+}
+footer {
+  background-color: var(--background);
+}
+/* кнопки фільтрів в портфоліо */
+.portfolio-button {
+  color: var(--black-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.portfolio-button:hover {
+  color: var(--white);
+  background-color: var(--active);
+}
+.portfolio-button:focus {
+  color: var(--white);
+  background-color: var(--active);
+}
+.portfolio-item > li > h3 {
+  color: var(--black-text);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+.portfolio-item > li > p {
+  color: var(--gray-text);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+/* телефон і мейл в хедері */
+.contacts {
+  color: var(--gray-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.contacts:hover {
+  color: var(--active);
+}
+.contacts:focus {
+  color: var(--active);
+}
+h1 {
+  color: var(--white);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+}
+.title {
+  background-color: var(--background);
+}
+/* кнопка "заказать услуги" */
+.title > button {
+  background-color: var(--active);
+  color: var(--white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+.benefits > ul > li > h3 {
+  color: var(--black-text);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+.benefits > ul > li > p {
+  color: var(--gray-text);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+h2 {
+  color: var(--black-text);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+.team > ul > li > h3 {
+  color: var(--black-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.team > ul > li > p {
+  color: var(--gray-text);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.team {
+  background-color: var(--background-2);
+}
