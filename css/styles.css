@@ -144,6 +144,9 @@ body {
   list-style: none;
 }
 /* Чем занимается компания */
+.work-item {
+  list-style: none;
+}
 .section-article {
   color: var(--black-text);
   font-style: normal;
