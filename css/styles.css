@@ -6,149 +6,216 @@
   --gray-2: rgba(255, 255, 255, 0.6);
   --background: #2f303a;
   --background-2: #f5f4fa;
+  --black: #000;
 }
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
+/* логотип ВебСтудіо */
 .logo-header {
-  font-family: 'Raleway';
-  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  color: black;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  text-decoration: none;
 }
 .logo-footer {
-  font-family: 'Raleway';
-  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  text-decoration: none;
 }
-.logo-footer > span {
-  color: var(--active);
-}
+.logo-footer > span,
 .logo-header > span {
   color: var(--active);
 }
 /* меню навігації в хедері */
-nav > ul > li > a {
-  color: var(--black-text);
+.navigation {
+  list-style: none;
+}
+.navigation-item {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--black-text);
+  text-decoration: none;
 }
-nav > ul > li > a:hover {
+.navigation-item:hover,
+.navigation-item:focus,
+.current {
   color: var(--active);
 }
-nav > ul > li > a:focus {
+.contacts {
+  list-style: none;
+}
+.contacts-item {
+  color: var(--gray-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contacts-item:hover,
+.contacts-item:focus {
   color: var(--active);
 }
-address {
+/* футер */
+.address {
   color: var(--white);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* тел і емеіл в футері */
-address > a {
+.footer-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--gray-2);
+  text-decoration: none;
 }
-address > a:hover {
+.footer-contact:hover,
+.footer-contact:focus {
   color: var(--active);
 }
-address > a:focus {
-  color: var(--active);
-}
-footer {
+.footer {
   background-color: var(--background);
 }
-/* кнопки фільтрів в портфоліо */
-.portfolio-button {
-  color: var(--black-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-}
-.portfolio-button:hover {
-  color: var(--white);
-  background-color: var(--active);
-}
-.portfolio-button:focus {
-  color: var(--white);
-  background-color: var(--active);
-}
-.portfolio-item > li > h3 {
-  color: var(--black-text);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-}
-.portfolio-item > li > p {
-  color: var(--gray-text);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-}
-/* телефон і мейл в хедері */
-.contacts {
-  color: var(--gray-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-}
-.contacts:hover {
-  color: var(--active);
-}
-.contacts:focus {
-  color: var(--active);
-}
-h1 {
+/* область "Эффективные решения для вашего бизнеса" */
+.main-title {
   color: var(--white);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .title {
   background-color: var(--background);
 }
 /* кнопка "заказать услуги" */
-.title > button {
+.title-button {
   background-color: var(--active);
   color: var(--white);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-.benefits > ul > li > h3 {
+/* Преимущества компании */
+.benefits-title {
   color: var(--black-text);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
-.benefits > ul > li > p {
+.benefits-item {
   color: var(--gray-text);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-h2 {
+.benefits {
+  list-style: none;
+}
+/* Чем занимается компания */
+.section-article {
   color: var(--black-text);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-.team > ul > li > h3 {
+/* Команда */
+.team-title {
   color: var(--black-text);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-.team > ul > li > p {
+.team-item {
   color: var(--gray-text);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team {
   background-color: var(--background-2);
+  list-style: none;
+}
+/* Портфоліо */
+/* кнопки фільтрів в портфоліо */
+.portfolio-menu {
+  list-style: none;
+}
+.portfolio-button {
+  color: var(--black-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--white);
+  background-color: var(--active);
+}
+/* головний контент портфоліо */
+.portfolio {
+  list-style: none;
+}
+.portfolio-link {
+  text-decoration: none;
+}
+.portfolio-title {
+  color: var(--black-text);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.portfolio-item {
+  color: var(--gray-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
